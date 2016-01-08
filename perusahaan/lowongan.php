@@ -19,7 +19,7 @@
 
 				<?php 
 
-				include 'koneksi.php';
+				include '../koneksi.php';
 				try { 
 					$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					$tampil = $db->query("SELECT * FROM lowongan");

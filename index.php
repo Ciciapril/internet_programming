@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+session_start();
 
+ ?>
 <head>
 
     <meta charset="utf-8">
@@ -46,249 +49,18 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">GetJobs</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#lowongan">Semua Lowongan</a>
-                    </li>
-					 <li class="page-scroll">
-                        <a href="#jobfair">Info Jobfair</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#login">Masuk?</a>
-                    </li>
-                    
-                </ul>
-				
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+ 
 
     <!-- Header -->
 		   <?php
+		   include 'nav.php';
 		   include'header.php';
 		   include'lowongan.php';
+		   include'jobfair1.php';
+		   include 'modals.php';
+		   include 'login1.php';
 		   ?>
-	 
-		
-		<section class="success" id="jobfair">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Info Jobfair</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-               <table class="table table-condensed">
-  …			<tr>
-				<td align = "center"> <img src="img/1.jpg"  width="500" height="250">
-				</td>
-				<td align = "center"> <img src="img/2.jpg"  width="500" height="250">
-				</td>
-			</tr>
-			<tr>
-				<td align = "center"> <img src="img/3.jpg"  width="500" height="250">
-				</td>
-				<td align = "center"> <img src="img/4.jpg"  width="500" height="250">
-				</td>
-			</tr>
-			
-	</table>
-		<nav>
-		  <ul class="pager">
-			<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-			<li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-		  </ul>
-		</nav>
-            </div>
-        </div>
-    </section>
-	
-	 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          
-                    </div>      
-	  <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Pendaftaran</h2>
-                            <hr class="star-primary">
-									<div class="row">
-										<div class="col-lg-12">
-											<form method="post" action="" enctype="multipart/form-data">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-			<input type="text" class="form-control"  placeholder="Nama">
-		  </div>
-		  <div class="form-group">
-			
-			<input type="text" class="form-control" id="alamat" placeholder="Alamat">
-		  </div>
-		  <div class="form-group">
-			
-			<input type="email" class="form-control" id="email" placeholder="Email">
-		  </div>
-		  <div class="form-group">
-			
-			<input type="password" class="form-control" id="sandi" placeholder="Sandi">
-		  </div>
-		  
-			 <div class="modal-body">
-                        <label>Tanggal</label>
-                        <input type="text" id="tanggal">
-                    </div>
-						<input type="radio" name="Kelamin" value="L">Laki Laki
-						<input type="radio" name="Kelamin" value="P">Perempuan
-						<br>
-													</div>
-	<div class="col-md-6">
-		<label>Pendidikan Terakhir</label>
-		<select name="Pendidikan">
-		<option>-Pendidikan-</option>
-		<option value="1">SMA</option>
-		<option value="2">D1</option>
-		<option value="2">D2</option>
-		<option value="2">D3</option>
-		<option value="3">S1</option>
-		<option value="2">S2</option>
-		<option value="2">S3</option>
-		</select><br>
-		<label>Jurusan</label>
-		
-		<input type="text" Name="jurusan" size="20" placeholder="Jurusan"><br> 
-	</div>
-	   	<div class="clearfix"></div>
-			<div>
-				<input type="submit" name="btn" value="Daftar" class="btn btn-default">
-			</div>
-		</div>
-	</form>
-		</div>
-		</div>
-	</div>
-     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-	
-		<section class="success" id="login">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Login</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-				<div class="row">
-					<h5 align="center"> Belum punya Akun?</h5> <div><p><center>
-					<a href="#portfolioModal2" data-toggle="modal" class="btn btn-lg btn-outline">DAFTAR</a></center></p></div>
-				</div>
-                <div class="col-lg-4 col-lg-offset-2">
-					<h5> Login Member </h5>
-					<form class="form-horizontal">
-				  <div class="form-group">
-					<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-					<div class="col-sm-10">
-					  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-					</div>
-				  </div>
-			  <div class="form-group">
-				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <div class="checkbox">
-					<label>
-					  <input type="checkbox"> Remember me
-					</label>
-				  </div>
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <button type="submit" class="btn btn-default">Sign in</button>
-				</div>
-			  </div>
-			</form>
-                </div>
-                <div class="col-lg-4">
-				
-					<h5>Login Perusahaan </h5>
-				<form class="form-horizontal">
-			  <div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-				<div class="col-sm-10">
-				  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				<div class="col-sm-10">
-				  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <div class="checkbox">
-					<label>
-					  <input type="checkbox"> Remember me
-					</label>
-				  </div>
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <button type="submit" class="btn btn-default">Sign in</button>
-				</div>
-			  </div>
-			</form>
-                    
-                </div>
-                
-            </div>
-					
-                
-                </div>
-            </div>
-        </div>
-    </section>
+	 	
 		</body>
 
     </section>

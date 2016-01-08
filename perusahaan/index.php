@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+//if(!isset($_SESSION['usernameperusahaan'])){
+  //  header("location: loginperusahaan.php");
+ //   exit;
+//}
+ ?>
 <head>
 
     <meta charset="utf-8">
@@ -69,7 +74,7 @@
                   Perusahaan<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   
-                  <li><a href="#">
+                  <li><a href="logout.php">
                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                     Logout</a></li>                  
                 </ul>
@@ -98,70 +103,10 @@
             </div>
         </div>
     </header>
-	 <section class="success" id="lowongan">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Semua Lowongan</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row" font="Arial">
-                <table class="table table-condensed">
-	  …			 <tr>
-					<th>No</th>
-					<th>Perusahaan</th>
-					<th>Bagian </th>
-					<th>Detil Lowongan</th>
-					
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>PT ABCD</td>
-					<td>Administrasi</td>
-					<td>kualifikasi : jdfndjbfjdbfjdfjd<br>bfjdnejdjbjfbdjfb<br>
-					jdbfjdbcjbdjcbj<br>dbjdjcbjdbcjdbjcbdjbcjdbcjjb</td>
-					
-				<tr>
-					<td>2</td>
-					<td>PT CITRA BUANA TEKNOLOGI</td>
-					<td>Programmer</td>
-					<td>kualifikasi : jdfndjbfjdbfjdfjd<br>bfjdnejdjbjfbdjfb<br>
-					jdbfjdbcjbdjcbj<br>dbjdjcbjdbcjdbjcbdjbcjdbcjjb</td>
-					
-				
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>CV BRAMASTHA ABIMANA</td>
-				<td>HRD</td>
-				<td>kualifikasi : jdfndjbfjdbfjdfjd<br>bfjdnejdjbjfbdjfb<br>
-				jdbfjdbcjbdjcbj<br>dbjdjcbjdbcjdbjcbdjbcjdbcjjb</td>
-				
-			
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>CV BRAMASTHA ABIMANA</td>
-				<td>HRD</td>
-				<td>kualifikasi : jdfndjbfjdbfjdfjd<br>bfjdnejdjbjfbdjfb<br>
-				jdbfjdbcjbdjcbj<br>dbjdjcbjdbcjdbjcbdjbcjdbcjjb</td>
-				
-			
-			</tr>
-	
-		</table>
-			<nav>
-			  <ul class="pager">
-				<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-				<li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-			  </ul>
-			</nav>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+	<?php 
+    include "lowongan.php";
+
+     ?>
 		
 		<section class="success" id="jobfair">
         <div class="container">

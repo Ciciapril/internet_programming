@@ -1,0 +1,51 @@
+ <!-- Modal Submitt -->
+	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Upload Lamaran</h2>
+							                            <hr class="star-primary">
+									<div class="row">
+										<div class="col-lg-12">
+											<form method="post" action="" enctype="multipart/form-data">
+												<div class="row">
+													<div class="col-md-12">
+													<p> Silahkan upload lamaran anda disini...</p>
+														<div class="form-group">
+															<input type="text" class="form-control" placeholder="Nama Lengkap" id="name" name="nama" required data-validation-required-message="Isikan Nama Lengkap">
+															<p class="help-block text-danger"></p>
+														</div>
+														<div class="form-group">
+															<input type="email" class="form-control" placeholder="Alamat E-Mail" id="email" name="email" required data-validation-required-message="Isikan Emailmu dengan benar">
+															<p class="help-block text-danger"></p>
+														</div>
+														
+														<div class="form-group">
+															<input type="file" placeholder="Lamaran" id="name" name="sca" >
+															<p class="help-block text-danger"> </p>
+														</div>
+													</div>
+												</div>
+													
+													<div class="clearfix"></div>
+													<div class="col-lg-12 text-center">
+														<input type="submit" name="btn" value="Submit" class="btn btn-default">
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
